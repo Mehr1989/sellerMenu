@@ -51,6 +51,8 @@ import PieCard from "views/admin/default/components/PieCard";
 import Tasks from "views/admin/default/components/Tasks";
 import TotalSpent from "views/admin/default/components/TotalSpent";
 import WeeklyRevenue from "views/admin/default/components/WeeklyRevenue";
+
+import MainBanner from "views/admin/default/components/MainBanner"
 import {
   columnsDataCheck,
   columnsDataComplex,
@@ -64,10 +66,17 @@ export default function UserReports() {
   const boxBg = useColorModeValue("secondaryGray.300", "whiteAlpha.100");
   return (
     <Box pt={{ base: "130px", md: "80px", xl: "80px" }}>
+    
+     <Box style={{width:"100%" , height:"32%"}}>
+     <MainBanner />
+     </Box>
+     
+         
       <SimpleGrid
         columns={{ base: 1, md: 2, lg: 3, "2xl": 6 }}
         gap='20px'
         mb='20px'>
+       
         <MiniStatistics
           startContent={
             <IconBox

@@ -42,8 +42,8 @@ export default function Overview() {
           gridArea='1 / 1 / 2 / 2'
           banner={banner}
           avatar={avatar}
-          name='سارا احمدی'
-          job='مدیر رستوران'
+          name="رستوران ارکید"
+          job="محدوده شریعتی"
           posts='17'
           followers='9.7k'
           following='274'

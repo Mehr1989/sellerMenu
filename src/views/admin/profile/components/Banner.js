@@ -2,12 +2,15 @@
 import { Avatar, Box, Flex, Text, useColorModeValue } from "@chakra-ui/react";
 import Card from "components/card/Card.js";
 import React from "react";
+import avatar0 from "assets/img/avatars/avatar0.png"
+
 
 export default function Banner(props) {
   const { banner, avatar, name, job, posts, followers, following } = props;
   // Chakra Color Mode
   const textColorPrimary = useColorModeValue("secondaryGray.900", "white");
   const textColorSecondary = "gray.400";
+
   const borderColor = useColorModeValue(
     "white !important",
     "#111C44 !important"
@@ -23,7 +26,7 @@ export default function Banner(props) {
       />
       <Avatar
         mx='auto'
-        src={avatar}
+        src={avatar0}
         h='200px'
         w='200px'
         mt='-43px'
