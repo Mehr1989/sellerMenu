@@ -31,6 +31,8 @@ import {
   SimpleGrid,
   useColorModeValue,
 } from "@chakra-ui/react";
+
+import MainBanner from "views/admin/default/components/MainBanner"
 // Assets
 import Usa from "assets/img/dashboards/usa.png";
 // Custom components
@@ -64,6 +66,7 @@ export default function UserReports() {
   const boxBg = useColorModeValue("secondaryGray.300", "whiteAlpha.100");
   return (
     <Box pt={{ base: "130px", md: "80px", xl: "80px" }}>
+       <MainBanner />
       <SimpleGrid
         columns={{ base: 1, md: 2, lg: 3, "2xl": 6 }}
         gap='20px'

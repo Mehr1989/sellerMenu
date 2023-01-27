@@ -85,7 +85,7 @@ function SignIn() {
           <Heading color={textColor} fontSize='36px' mb='10px'>
             ثبت نام
           </Heading>
-          <Text
+          <Text style={{direction:"rtl"}}
             mb='36px'
             ms='4px'
             color={textColorSecondary}
