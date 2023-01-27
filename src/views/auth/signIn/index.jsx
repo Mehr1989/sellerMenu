@@ -83,7 +83,7 @@ function SignIn() {
         flexDirection='column'>
         <Box me='auto'>
           <Heading color={textColor} fontSize='36px' mb='10px'>
-            Sign In
+            ثبت نام
           </Heading>
           <Text
             mb='36px'
@@ -91,7 +91,7 @@ function SignIn() {
             color={textColorSecondary}
             fontWeight='400'
             fontSize='md'>
-            Enter your email and password to sign in!
+            ایمیل و پسورد خود وارد کنید
           </Text>
         </Box>
         <Flex
@@ -118,12 +118,12 @@ function SignIn() {
             _active={googleActive}
             _focus={googleActive}>
             <Icon as={FcGoogle} w='20px' h='20px' me='10px' />
-            Sign in with Google
+            ثبت نام با اکانت گوگل
           </Button>
           <Flex align='center' mb='25px'>
             <HSeparator />
-            <Text color='gray.400' mx='14px'>
-              or
+            <Text color='gray.400' mx='14px' >
+              یا
             </Text>
             <HSeparator />
           </Flex>

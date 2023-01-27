@@ -19,12 +19,15 @@ function Dropzone(props) {
       borderRadius='16px'
       w='100%'
       h='max-content'
-      minH='100%'
+      minH='100%%'
       cursor='pointer'
       {...getRootProps({ className: "dropzone" })}
       {...rest}>
-      <Input variant='main' {...getInputProps()} />
+        <Input variant='main' {...getInputProps()}/>
       <Button variant='no-effects'>{content}</Button>
+      
+   
+  
     </Flex>
   );
 }

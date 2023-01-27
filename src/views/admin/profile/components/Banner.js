@@ -18,50 +18,25 @@ export default function Banner(props) {
         bg={`url(${banner})`}
         bgSize='cover'
         borderRadius='16px'
-        h='131px'
+        h='250px'
         w='100%'
       />
       <Avatar
         mx='auto'
         src={avatar}
-        h='87px'
-        w='87px'
+        h='200px'
+        w='200px'
         mt='-43px'
         border='4px solid'
         borderColor={borderColor}
       />
-      <Text color={textColorPrimary} fontWeight='bold' fontSize='xl' mt='10px'>
+      <Text color={textColorPrimary} fontWeight='bold' fontSize='45px' mt='10px'>
         {name}
       </Text>
-      <Text color={textColorSecondary} fontSize='sm'>
+      <Text color={textColorSecondary} fontSize='30px'>
         {job}
       </Text>
-      <Flex w='max-content' mx='auto' mt='26px'>
-        <Flex mx='auto' me='60px' align='center' direction='column'>
-          <Text color={textColorPrimary} fontSize='2xl' fontWeight='700'>
-            {posts}
-          </Text>
-          <Text color={textColorSecondary} fontSize='sm' fontWeight='400'>
-            Posts
-          </Text>
-        </Flex>
-        <Flex mx='auto' me='60px' align='center' direction='column'>
-          <Text color={textColorPrimary} fontSize='2xl' fontWeight='700'>
-            {followers}
-          </Text>
-          <Text color={textColorSecondary} fontSize='sm' fontWeight='400'>
-            Followers
-          </Text>
-        </Flex>
-        <Flex mx='auto' align='center' direction='column'>
-          <Text color={textColorPrimary} fontSize='2xl' fontWeight='700'>
-            {following}
-          </Text>
-          <Text color={textColorSecondary} fontSize='sm' fontWeight='400'>
-            Following
-          </Text>
-        </Flex>
-      </Flex>
+    
     </Card>
   );
 }

@@ -4,21 +4,21 @@ import React from "react";
 import { Button, Flex, Link, Text } from "@chakra-ui/react";
 
 // Assets
-import banner from "assets/img/nfts/NftBanner1.png";
+import banner from "assets/img/nfts/banner02.jpg";
 
 export default function Banner() {
   // Chakra Color Mode
   return (
-    <Flex
+    <Flex 
       direction='column'
       bgImage={banner}
       bgSize='cover'
-      py={{ base: "30px", md: "56px" }}
+      py={{ base: "30px", md: "128px" }}
       px={{ base: "30px", md: "64px" }}
       borderRadius='30px'>
-      <Text
-        fontSize={{ base: "24px", md: "34px" }}
-        color='white'
+      <Text style={{direction:"rtl",marginLeft:"25%",marginBottom:"26%"}}
+        fontSize={{ base: "45px", md: "45px" }}
+        color='gray'
         mb='14px'
         maxW={{
           base: "100%",
@@ -29,12 +29,13 @@ export default function Banner() {
           "3xl": "42%",
         }}
         fontWeight='700'
+        
         lineHeight={{ base: "32px", md: "42px" }}>
-        Discover, collect, and sell extraordinary NFTs
+         خرید و فروش آسان
       </Text>
-      <Text
-        fontSize='md'
-        color='#E3DAFF'
+      <Text style={{direction:"rtl",marginLeft:'34%'}}
+        fontSize='35px'
+        color='gray'
         maxW={{
           base: "100%",
           md: "64%",
@@ -46,28 +47,23 @@ export default function Banner() {
         fontWeight='500'
         mb='40px'
         lineHeight='28px'>
-        Enter in this creative world. Discover now the latest NFTs or start
-        creating your own!
+          دریافت مبلغ راحت و سریع
       </Text>
-      <Flex align='center'>
-        <Button
-          bg='white'
+      <Flex align='center' style={{marginLeft:"45%"}}>
+        <Button 
+          bg='grey'
           color='black'
           _hover={{ bg: "whiteAlpha.900" }}
           _active={{ bg: "white" }}
           _focus={{ bg: "white" }}
-          fontWeight='500'
-          fontSize='14px'
+          fontWeight='900'
+          fontSize='20px'
           py='20px'
-          px='27'
+          px='35'
           me='38px'>
-          Discover now
+          بیشتر بدانید
         </Button>
-        <Link>
-          <Text color='white' fontSize='sm' fontWeight='500'>
-            Watch video
-          </Text>
-        </Link>
+       
       </Flex>
     </Flex>
   );

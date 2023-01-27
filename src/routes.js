@@ -1,6 +1,6 @@
 import React from "react";
 
-import { Icon } from "@chakra-ui/react";
+import { Icon} from "@chakra-ui/react";
 import {
   MdBarChart,
   MdPerson,
@@ -21,21 +21,21 @@ import SignInCentered from "views/auth/signIn";
 
 const routes = [
   {
-    name: "Main Dashboard",
+    name: "داشبورد اصلی",
     layout: "/admin",
     path: "/default",
-    icon: <Icon as={MdHome} width='20px' height='20px' color='inherit' />,
+    icon: <Icon as={MdHome} width='40px' height='40px' color='inherit' />,
     component: MainDashboard,
   },
   {
-    name: "NFT Marketplace",
+    name: "فروش",
     layout: "/admin",
     path: "/nft-marketplace",
     icon: (
       <Icon
         as={MdOutlineShoppingCart}
-        width='20px'
-        height='20px'
+        width='40px'
+        height='40px'
         color='inherit'
       />
     ),
@@ -43,31 +43,31 @@ const routes = [
     secondary: true,
   },
   {
-    name: "Data Tables",
+    name: "اطلاعات آماری",
     layout: "/admin",
-    icon: <Icon as={MdBarChart} width='20px' height='20px' color='inherit' />,
+    icon: <Icon as={MdBarChart} width='40px' height='40px' color='inherit' />,
     path: "/data-tables",
     component: DataTables,
   },
   {
-    name: "Profile",
+    name: "پروفایل",
     layout: "/admin",
     path: "/profile",
-    icon: <Icon as={MdPerson} width='20px' height='20px' color='inherit' />,
+    icon: <Icon as={MdPerson} width='40px' height='40px' color='inherit' />,
     component: Profile,
   },
   {
-    name: "Sign In",
+    name: "ثبت نام",
     layout: "/auth",
     path: "/sign-in",
-    icon: <Icon as={MdLock} width='20px' height='20px' color='inherit' />,
+    icon: <Icon as={MdLock} width='40px' height='40px' color='inherit' />,
     component: SignInCentered,
   },
   {
-    name: "RTL Admin",
+    name: "داشبورد",
     layout: "/rtl",
     path: "/rtl-default",
-    icon: <Icon as={MdHome} width='20px' height='20px' color='inherit' />,
+    icon: <Icon as={MdHome} width='40px' height='40px' color='inherit' />,
     component: RTL,
   },
 ];

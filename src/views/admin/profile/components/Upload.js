@@ -1,4 +1,5 @@
 // Chakra imports
+import { AttachmentIcon } from "@chakra-ui/icons";
 import {
   Box,
   Button,
@@ -19,49 +20,44 @@ export default function Upload(props) {
   // Chakra Color Mode
   const textColorPrimary = useColorModeValue("secondaryGray.900", "white");
   const brandColor = useColorModeValue("brand.500", "white");
-  const textColorSecondary = "gray.400";
+
   return (
-    <Card {...rest} mb='20px' align='center' p='20px'>
-      <Flex h='100%' direction={{ base: "column", "2xl": "row" }}>
+    <Card {...rest} mb='20px' align='center' p='20px'h="1vh">
+      <Flex h='100%'direction={{ base: "column", "2xl": "row" }}>
         <Dropzone
           w={{ base: "100%", "2xl": "268px" }}
           me='36px'
           maxH={{ base: "60%", lg: "50%", "2xl": "100%" }}
           minH={{ base: "60%", lg: "50%", "2xl": "100%" }}
           content={
-            <Box>
-              <Icon as={MdUpload} w='80px' h='80px' color={brandColor} />
+            <Box style={{direction:"rtl"}}>
+              <Icon as={AttachmentIcon} w='80px' h='80px' color={brandColor} />
               <Flex justify='center' mx='auto' mb='12px'>
-                <Text fontSize='xl' fontWeight='700' color={brandColor}>
-                  Upload Files
+                <Text fontSize='xl' fontWeight='700' color={brandColor} style={{direction:"rtl"}}>
+                 آپلودعکس
                 </Text>
               </Flex>
               <Text fontSize='sm' fontWeight='500' color='secondaryGray.500'>
-                PNG, JPG and GIF files are allowed
+                PNG, JPG and GIF فایل های قابل اپلود
               </Text>
             </Box>
           }
         />
-        <Flex direction='column' pe='44px'>
-          <Text
+        
+        <Flex direction='column' pe='44px'  >
+          <Text style={{direction:"rtl"}}
             color={textColorPrimary}
             fontWeight='bold'
             textAlign='start'
             fontSize='2xl'
             mt={{ base: "20px", "2xl": "50px" }}>
-            Complete your profile
+              ویرایش پروفایل
+ 
           </Text>
-          <Text
-            color={textColorSecondary}
-            fontSize='md'
-            my={{ base: "auto", "2xl": "10px" }}
-            mx='auto'
-            textAlign='start'>
-            Stay on the pulse of distributed projects with an anline whiteboard
-            to plan, coordinate and discuss
-          </Text>
-          <Flex w='100%'>
-            <Button
+         
+       
+        </Flex>
+        <Button
               me='100%'
               mb='50px'
               w='140px'
@@ -69,10 +65,9 @@ export default function Upload(props) {
               mt={{ base: "20px", "2xl": "auto" }}
               variant='brand'
               fontWeight='500'>
-              Publish now
+              تایید
             </Button>
-          </Flex>
-        </Flex>
+        
       </Flex>
     </Card>
   );
