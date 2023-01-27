@@ -4,6 +4,7 @@ import {
   Flex,
   Text,
   Icon,
+  Button,
   useColorModeValue,
   Checkbox,
 } from "@chakra-ui/react";
@@ -12,9 +13,11 @@ import Card from "components/card/Card.js";
 import Menu from "components/menu/MainMenu";
 import IconBox from "components/icons/IconBox";
 
+import inventory0 from "C:/Users/mehrnoosh/Desktop/githubSeller/sellerMenu/src/assets/img/nfts/inventory0.png"
 // Assets
 import { MdCheckBox, MdDragIndicator } from "react-icons/md";
 import React from "react";
+import { CheckCircleIcon } from "@chakra-ui/icons";
 
 export default function Conversion(props) {
   const { ...rest } = props;
@@ -25,107 +28,20 @@ export default function Conversion(props) {
   const brandColor = useColorModeValue("brand.500", "brand.400");
   return (
     <Card p='20px' align='center' direction='column' w='100%' {...rest}>
-      <Flex alignItems='center' w='100%' mb='30px'>
-        <IconBox
-          me='12px'
-          w='38px'
-          h='38px'
-          bg={boxBg}
-          icon={<Icon as={MdCheckBox} color={brandColor} w='24px' h='24px' />}
-        />
+      
+        <Flex
+          bgImage={inventory0}
+          bgSize="cover"
+          py={{ base: "150px", md: "200px" }}
+          px={{ base: "20px", md: "32px" }}
+          borderRadius='30px'
+        >
+      
+        
 
-        <Text color={textColor} fontSize='lg' fontWeight='700'>
-          Tasks
-        </Text>
-        <Menu ms='auto' />
-      </Flex>
-      <Box px='11px'>
-        <Flex mb='20px'>
-          <Checkbox me='16px' colorScheme='brandScheme' />
-          <Text
-            fontWeight='bold'
-            color={textColor}
-            fontSize='md'
-            textAlign='start'>
-            Landing Page Design
-          </Text>
-          <Icon
-            ms='auto'
-            as={MdDragIndicator}
-            color='secondaryGray.600'
-            w='24px'
-            h='24px'
-          />
         </Flex>
-        <Flex mb='20px'>
-          <Checkbox me='16px' defaultChecked colorScheme='brandScheme' />
-          <Text
-            fontWeight='bold'
-            color={textColor}
-            fontSize='md'
-            textAlign='start'>
-            Dashboard Builder
-          </Text>
-          <Icon
-            ms='auto'
-            as={MdDragIndicator}
-            color='secondaryGray.600'
-            w='24px'
-            h='24px'
-          />
-        </Flex>
-        <Flex mb='20px'>
-          <Checkbox defaultChecked me='16px' colorScheme='brandScheme' />
-          <Text
-            fontWeight='bold'
-            color={textColor}
-            fontSize='md'
-            textAlign='start'>
-            Mobile App Design
-          </Text>
-          <Icon
-            ms='auto'
-            as={MdDragIndicator}
-            color='secondaryGray.600'
-            w='24px'
-            h='24px'
-          />
-        </Flex>
-        <Flex mb='20px'>
-          <Checkbox me='16px' colorScheme='brandScheme' />
-          <Text
-            fontWeight='bold'
-            color={textColor}
-            fontSize='md'
-            textAlign='start'>
-            Illustrations
-          </Text>
-          <Icon
-            ms='auto'
-            as={MdDragIndicator}
-            color='secondaryGray.600'
-            w='24px'
-            h='24px'
-          />
-        </Flex>
-        <Flex mb='20px'>
-          <Checkbox defaultChecked me='16px' colorScheme='brandScheme' />
-          <Text
-            fontWeight='bold'
-            color={textColor}
-            fontSize='md'
-            textAlign='start'>
-            Promotional LP
-          </Text>
-          <Icon
-            ms='auto'
-            as={MdDragIndicator}
-            color='secondaryGray.600'
-            w='24px'
-            h='24px'
-          />
-        </Flex>
-      </Box>
+
+<Button style={{backgroundColor:"gray",fontSize:"20px",marginTop:"5%"}}>موجودی محصولات</Button>
     </Card>
   );
 }
