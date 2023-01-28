@@ -3,7 +3,7 @@ import order0 from '../components/Images/order0.png'
 // Chakra imports
 import { Box, Button, Flex, Icon, Text, useColorModeValue } from "@chakra-ui/react";
 
-
+import { useHistory } from "react-router-dom";
 // Custom components
 import Card from "components/card/Card.js";
 
@@ -12,7 +12,7 @@ import Card from "components/card/Card.js";
 
 export default function DailyTraffic(props) {
   const { ...rest } = props;
-
+const navigate = useHistory()
   // Chakra Color Mode
   const textColor = useColorModeValue("secondaryGray.900", "white");
   return (
@@ -27,7 +27,8 @@ export default function DailyTraffic(props) {
       
      </Flex>
      
-     <Button style={{backgroundColor:"gray",fontSize:"20px",marginTop:"5%"}}>سفارشات</Button>
+     <Button style={{backgroundColor:"gray",fontSize:"20px",marginTop:"5%"}}
+      onClick={()=>navigate("/orders")}>سفارشات</Button>
     </Card>
   );
 }

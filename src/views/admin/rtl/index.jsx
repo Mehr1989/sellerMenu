@@ -53,6 +53,7 @@ import PieCard from "views/admin/default/components/PieCard";
 import Tasks from "views/admin/default/components/Tasks";
 import TotalSpent from "views/admin/default/components/TotalSpent";
 import WeeklyRevenue from "views/admin/default/components/WeeklyRevenue";
+
 import {
   columnsDataCheck,
   columnsDataComplex,
@@ -168,6 +169,7 @@ export default function UserReports() {
         <SimpleGrid columns={{ base: 1, md: 2, xl: 2 }} gap='20px'>
           <Tasks />
           <MiniCalendar h='100%' minW='100%' selectRange={false} />
+         
         </SimpleGrid>
       </SimpleGrid>
     </Box>

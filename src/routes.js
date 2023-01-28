@@ -16,6 +16,7 @@ import Profile from "views/admin/profile";
 import DataTables from "views/admin/dataTables";
 import RTL from "views/admin/rtl";
 
+
 // Auth Imports
 import SignInCentered from "views/auth/signIn";
 
@@ -70,6 +71,7 @@ const routes = [
     icon: <Icon as={MdHome} width='40px' height='40px' color='inherit' />,
     component: RTL,
   },
+
 ];
 
 export default routes;

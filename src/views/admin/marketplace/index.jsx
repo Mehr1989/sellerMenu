@@ -48,6 +48,10 @@ import Nft3 from "assets/img/nfts/Nft3.png";
 import Nft4 from "assets/img/nfts/Nft4.png";
 import Nft5 from "assets/img/nfts/Nft5.png";
 import Nft6 from "assets/img/nfts/Nft6.png";
+import cake3 from './components/images/cake3.jpg'
+
+import coffee05 from "./components/images/coffee05.jpg"
+import kabab0 from "./components/images/kabab0.jpg"
 import Avatar1 from "assets/img/avatars/avatar1.png";
 import Avatar2 from "assets/img/avatars/avatar2.png";
 import Avatar3 from "assets/img/avatars/avatar3.png";
@@ -114,12 +118,12 @@ export default function Marketplace() {
             </Flex>
             <SimpleGrid columns={{ base: 1, md: 3 }} gap='20px'>
               <NFT
-                name='جوجه 04'
+                name='جوجه کباب 04'
                
                 bidders={[
                
                 ]}
-                image={Nft1}
+                image={kabab0}
                 currentbid='0.91 ETH'
                 download='#'
               />
@@ -129,7 +133,7 @@ export default function Marketplace() {
                 bidders={[
                  
                 ]}
-                image={Nft2}
+                image={cake3}
                 currentbid='0.91 ETH'
                 download='#'
               />
@@ -138,7 +142,7 @@ export default function Marketplace() {
               
                 bidders={[ 
                 ]}
-                image={Nft3}
+                image={coffee05}
                 currentbid='0.91 ETH'
                 download='#'
               />
