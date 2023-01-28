@@ -9,8 +9,10 @@ import {
   Th,
   Thead,
   Tr,
+  Button,
   useColorModeValue,
 } from "@chakra-ui/react";
+import us0 from "C:/Users/mehrnoosh/Desktop/githubSeller/sellerMenu/src/assets/img/nfts/us0.jpg"
 import React, { useMemo } from "react";
 import {
   useGlobalFilter,
@@ -22,6 +24,7 @@ import {
 // Custom components
 import Card from "components/card/Card";
 import Menu from "components/menu/MainMenu";
+
 
 // Assets
 import { MdCheckCircle, MdCancel, MdOutlineError } from "react-icons/md";
@@ -54,10 +57,24 @@ export default function ColumnsTable(props) {
   const textColor = useColorModeValue("secondaryGray.900", "white");
   const borderColor = useColorModeValue("gray.200", "whiteAlpha.100");
   return (
-    <Card>
+    <Card
+>
+    
+      
+      <Flex  px='25px' justify='space-between' mb='10px' align='center' justifyContent="center"
+        bgImage={us0}
+        bgSize="88%"
+        py={{ base: "150px", md: "200px" }}
+        px={{ base: "150px", md: "200px" }}
+        borderRadius='30px'
+      >
+        
+     
+      
+      </Flex>
      
                           
-                      
+     <Button style={{backgroundColor:"gray",fontSize:"20px",marginTop:"1.5%"}}>راهنمای استفاده</Button>              
     </Card>
   );
 }
