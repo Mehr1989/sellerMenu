@@ -13,7 +13,7 @@ import Card from "components/card/Card.js";
 import Menu from "components/menu/MainMenu";
 import IconBox from "components/icons/IconBox";
 
-import inventory0 from "C:/Users/mehrnoosh/Desktop/githubSeller/sellerMenu/src/assets/img/nfts/inventory0.png"
+import inventory0 from "../components/Images/inventory0.png"
 // Assets
 import { MdCheckBox, MdDragIndicator } from "react-icons/md";
 import React from "react";

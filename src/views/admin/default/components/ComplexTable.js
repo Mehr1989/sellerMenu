@@ -12,7 +12,8 @@ import {
   Button,
   useColorModeValue,
 } from "@chakra-ui/react";
-import us0 from "C:/Users/mehrnoosh/Desktop/githubSeller/sellerMenu/src/assets/img/nfts/us0.jpg"
+
+import us0 from "../components/Images/us0.jpg"
 import React, { useMemo } from "react";
 import {
   useGlobalFilter,

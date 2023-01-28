@@ -11,7 +11,8 @@ import {
   Tr,
   useColorModeValue,
 } from "@chakra-ui/react";
-import feedback0 from "C:/Users/mehrnoosh/Desktop/githubSeller/sellerMenu/src/assets/img/nfts/feedback0.jpg"
+
+import feedback0 from "../components/Images/feedback0.jpg"
 import React, { useMemo } from "react";
 import {
   useGlobalFilter,

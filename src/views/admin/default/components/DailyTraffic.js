@@ -1,5 +1,5 @@
 import React from "react";
-import order0 from 'C:/Users/mehrnoosh/Desktop/githubSeller/sellerMenu/src/assets/img/nfts/order0.png'
+import order0 from '../components/Images/order0.png'
 // Chakra imports
 import { Box, Button, Flex, Icon, Text, useColorModeValue } from "@chakra-ui/react";
 

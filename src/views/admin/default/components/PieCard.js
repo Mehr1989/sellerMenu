@@ -2,7 +2,8 @@
 import { Box, Flex, Text, Select, useColorModeValue,Button } from "@chakra-ui/react";
 // Custom components
 import Card from "components/card/Card.js";
-import balance1 from "C:/Users/mehrnoosh/Desktop/githubSeller/sellerMenu/src/assets/img/nfts/balace1.png"
+import balance1 from "../components/Images/balance1.png"
+
 import React from "react";
 
 export default function Conversion(props) {
