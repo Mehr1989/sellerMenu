@@ -18,6 +18,7 @@ export default function GeneralInformation(props) {
   return (
     <Card mb={{ base: "0px", "2xl": "20px" } }{...rest} >
       <Text 
+       style={{direction:"rtl"}}
         color={textColorPrimary}
         fontWeight='bold'
         fontSize='2xl'
@@ -29,7 +30,7 @@ export default function GeneralInformation(props) {
       </Text>
 
       
-      <Text color={textColorSecondary} fontSize='22px' me='26px' mb='40px' >
+      <Text color={textColorSecondary} fontSize='22px' me='26px' mb='40px' style={{direction:'rtl'}} >
                خانم سارا احمدی به مدت دو سال است که در بخش مدیریت
                رستوران فعالیت می کند
       </Text>
