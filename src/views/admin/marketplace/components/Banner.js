@@ -30,7 +30,7 @@ export default function Banner() {
         }}
         fontWeight='700'
         
-        lineHeight={{ base: "32px", md: "42px" }}>
+        lineHeight={{ base: "32px", md: "42px"}}>
          خرید و فروش آسان
       </Text>
       <Text style={{direction:"rtl",marginLeft:'34%'}}

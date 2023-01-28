@@ -1,11 +1,31 @@
-@import url("https://fonts.googleapis.com/css2?family=DM+Sans:ital,wght@0,400;0,500;0,700;1,400;1,500;1,700&display=swap");
+
+
+@font-face {
+  font-family: "IRANSANS";
+  src: url(../font/IRANSANSE.ttf) ;
+
+
+}
+*{
+  font-family: IRANSANS;
+  direction: rtl;
+}
+
 body {
   font-family: "DM Sans", sans-serif;
-  font-size: 25px;
+  font-size: 20px;
+
+
+  
+ 
 
  
  
+ 
 }
+
+
+
 
 option {
   color: black;
