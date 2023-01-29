@@ -13,9 +13,9 @@ function Feedback() {
     <Flex
   
     bgColor={"brand"}
-    py={{ base: "350px", md: "550px" }}
+    py={{ base: "200px", md: "180px" }}
     px={{ base: "20px", md: "32px" }}
-    borderRadius='30px'
+  
     >
 
     
