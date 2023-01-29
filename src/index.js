@@ -16,7 +16,7 @@ import Wallet from "MyComponents/Wallet";
 import Orders from "MyComponents/Orders";
 import Feedback from "MyComponents/Feedback";
 import { Provider } from "react-redux";
-import store from "layouts/redux/store";
+import store from "redux/store";
 
 
 ReactDOM.render(
