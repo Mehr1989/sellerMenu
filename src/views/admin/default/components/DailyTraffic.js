@@ -15,6 +15,11 @@ export default function DailyTraffic(props) {
 const navigate = useHistory()
   // Chakra Color Mode
   const textColor = useColorModeValue("secondaryGray.900", "white");
+
+  const history = useHistory()
+  const redirect = () => {
+    history.push('/orders');
+  }
   return (
     <Card align='center' direction='column' w='100%' {...rest}>
      <Flex
@@ -28,7 +33,8 @@ const navigate = useHistory()
      </Flex>
      
      <Button style={{backgroundColor:"gray",fontSize:"20px",marginTop:"5%"}}
-      onClick={()=>navigate("/orders")}>سفارشات</Button>
+     onClick={redirect}
+      >سفارشات</Button>
     </Card>
   );
 }

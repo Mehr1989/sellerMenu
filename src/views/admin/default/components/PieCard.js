@@ -3,10 +3,15 @@ import { Box, Flex, Text, Select, useColorModeValue,Button } from "@chakra-ui/re
 // Custom components
 import Card from "components/card/Card.js";
 import balance1 from "../components/Images/balance1.png"
+import { useHistory } from "react-router-dom";
 
 import React from "react";
 
 export default function Conversion(props) {
+ const history = useHistory()
+  const redirect = () => {
+    history.push('/wallet');
+  }
   const { ...rest } = props;
 
   // Chakra Color Mode
@@ -28,7 +33,9 @@ export default function Conversion(props) {
     
   
       </Flex>
-      <Button style={{backgroundColor:"gray",fontSize:"20px",marginTop:"5%"}}>کیف پول</Button>
+      <Button style={{backgroundColor:"gray",fontSize:"20px",marginTop:"5%"}} 
+      onClick={redirect} >کیف پول
+      </Button>
        
 
       

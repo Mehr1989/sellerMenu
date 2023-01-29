@@ -12,7 +12,7 @@ import {
   Button,
   useColorModeValue,
 } from "@chakra-ui/react";
-
+import { useHistory } from "react-router-dom";
 import us0 from "../components/Images/us0.jpg"
 import React, { useMemo } from "react";
 import {
@@ -30,6 +30,11 @@ import Menu from "components/menu/MainMenu";
 // Assets
 import { MdCheckCircle, MdCancel, MdOutlineError } from "react-icons/md";
 export default function ColumnsTable(props) {
+
+  const history = useHistory()
+  const redirect = () => {
+    history.push('/guidance');
+  }
   const { columnsData, tableData } = props;
 
   const columns = useMemo(() => columnsData, [columnsData]);
@@ -75,7 +80,8 @@ export default function ColumnsTable(props) {
       </Flex>
      
                           
-     <Button style={{backgroundColor:"gray",fontSize:"20px",marginTop:"1.5%"}}>راهنمای استفاده</Button>              
+     <Button style={{backgroundColor:"gray",fontSize:"20px",marginTop:"1.5%"}}onClick={redirect}
+      >راهنمای استفاده</Button>              
     </Card>
   );
 }

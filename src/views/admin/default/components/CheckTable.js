@@ -11,7 +11,7 @@ import {
   Tr,
   useColorModeValue,
 } from "@chakra-ui/react";
-
+import { useHistory } from "react-router-dom";
 import feedback0 from "../components/Images/feedback0.jpg"
 import React, { useMemo } from "react";
 import {
@@ -50,6 +50,11 @@ export default function CheckTable(props) {
   } = tableInstance;
   initialState.pageSize = 11;
 
+  const history = useHistory()
+  const redirect = () => {
+    history.push('/feedback');
+  }
+
   const textColor = useColorModeValue("secondaryGray.900", "white");
   const borderColor = useColorModeValue("gray.200", "whiteAlpha.100");
   return (
@@ -64,7 +69,9 @@ export default function CheckTable(props) {
 
       </Flex>
 
-        <Button style={{backgroundColor:"gray",fontSize:"20px",marginTop:"2.3%"}}>نظرات کاربران</Button> 
+        <Button style={{backgroundColor:"gray",fontSize:"20px",marginTop:"2.3%"}}
+        onClick={redirect}
+        >نظرات کاربران</Button> 
 
             
     </Card>

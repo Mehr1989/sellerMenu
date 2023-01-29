@@ -30,15 +30,15 @@ export default function Conversion(props) {
   const brandColor = useColorModeValue("brand.500", "brand.400");
   const history = useHistory()
   const redirect = () => {
-    history.push('/test');
+    history.push('/inventory');
   }
   return (
-    <Card p='20px' align='center' direction='column' w='100%' {...rest}>
+    <Card p='20px' align='center' direction='column' w='100%' {...rest} >
       
         <Flex
           bgImage={inventory0}
           bgSize="cover"
-          py={{ base: "150px", md: "200px" }}
+         py={{ base: "150px", md: "200px" }}
           px={{ base: "20px", md: "32px" }}
           borderRadius='30px'
         >
