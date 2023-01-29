@@ -15,12 +15,14 @@ import Guidance from "MyComponents/Guidance";
 import Wallet from "MyComponents/Wallet";
 import Orders from "MyComponents/Orders";
 import Feedback from "MyComponents/Feedback";
+import { Provider } from "react-redux";
+import store from "layouts/redux/store";
 
 
 ReactDOM.render(
   <ChakraProvider theme={theme}>
     <React.StrictMode>
-     
+     <Provider store={store}>
     
       <ThemeEditorProvider>
         <HashRouter>
@@ -37,7 +39,7 @@ ReactDOM.render(
           </Switch>
         </HashRouter>
       </ThemeEditorProvider>
-     
+      </Provider>
     </React.StrictMode>
   </ChakraProvider>,
   document.getElementById("root")
