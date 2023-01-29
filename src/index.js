@@ -17,12 +17,11 @@ import Orders from "MyComponents/Orders";
 import Feedback from "MyComponents/Feedback";
 
 
-
 ReactDOM.render(
   <ChakraProvider theme={theme}>
     <React.StrictMode>
      
-      
+    
       <ThemeEditorProvider>
         <HashRouter>
           <Switch>
