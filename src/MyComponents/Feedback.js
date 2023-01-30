@@ -20,13 +20,13 @@ function Feedback() {
 
     
   {isLoading && <h3>Loading</h3>}
-        {error && <h3>{error.message}</h3>}
+        {error && <h3>something went wrong</h3>}
         <section>
           {feedback && feedback.slice(1,10).map((feedbackData)=>{
             const{body,id,name} = feedbackData
             return(
-              <Flex key={id}
-         
+              <Flex 
+          
               direction='column'
             w={{ base: "30%", md: "50%" }}
             me={{ base: "4px", md: "32px", xl: "10px", "3xl": "32px" }}
@@ -34,7 +34,7 @@ function Feedback() {
            
               >
                 
-                <div 
+                <div key={id}
                 style={{backgroundColor:" rgb(131, 158, 201)",display:"flex"
                 ,flexDirection:"column",marginBottom:"10%",padding:"3%",borderRadius:'14px',
 
